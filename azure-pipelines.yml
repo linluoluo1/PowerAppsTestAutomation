@@ -73,6 +73,7 @@ jobs:
       OnlineUrl: $(PortalUrl)
       BrowserType: ${{ parameters.BrowserType }}
       # File location format is /s/TeamProjectName/FilePathToTestAutomationURLs.json
-      TestAutomationURLFilePath: /s/PowerAppsTestAutomation/TestURLs.json
+      TestAutomationURLFilePath:  $(Build.SourcesDirectory)\$(PowerAppsTestAutomation)\$(TestURLs.json)
+
       UsePrivateMode: $(PrivateMode)
       LoginMethod: ${{ parameters.LoginMethod }}
